@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /profile
+  port: 8084
+spring:
+  application:
+    name: profile_service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo_faceNote
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+jwt:
+  signerKey: btoCD084q5py6RWiUYFUGWNkEkopzI4CGUFiyo8Q+U4bIdBsZRYlyDZ1kuSR+sEH
